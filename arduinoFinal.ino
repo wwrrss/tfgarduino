@@ -8,7 +8,7 @@ int sensorValue =0;
 
 byte mac[] = { 0x90, 0xA2, 0xDA, 0x0F, 0xB2, 0x46 };
 
-byte ipServer[]={192,168,1,200};  // numeric IP for Google (no DNS)
+byte ipServer[]={192,168,1,200};  
 
 
 
