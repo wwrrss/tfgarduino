@@ -32,15 +32,12 @@ void loop()
     sensorValue = analogRead(A0);
     if(sensorValue < 300)
     {
-     digitalWrite(ledA,HIGH);
      if (client.available()) {
       client.println("GET /TESIS/sumar HTTP/1.1");
       client.println("Host:192.168.1.200");
       client.println("Connection: keep-alive");
       client.println();
       }
-  }else{
-    digitalWrite(ledA,LOW);
   }
   delay(400);
 }
